@@ -1,7 +1,7 @@
 #!/bin/sh
-wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.29/lolMiner_v1.29_Lin64.tar.gz 
+wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.39/lolMiner_v1.39_Lin64.tar.gz 
 tar -xf lolMiner_v1.29_Lin64.tar.gz
-cd 1.29
+cd 1.39
 apt update;apt -y install curl unzip autoconf git cmake binutils build-essential net-tools screen golang
 curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
 apt-get install -y nodejs
