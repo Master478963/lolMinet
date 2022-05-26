@@ -2,10 +2,6 @@ apt-get --purge remove cuda nvidia* libnvidia-*
 dpkg -l | grep cuda- | awk '{print $2}' | xargs -n1 dpkg --purge 
 apt-get remove cuda-* 
 apt autoremove 
-apt-get update
-sudo apt update
-sudo apt upgrade -y
-mkdir install ; cd install
 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-ubuntu1804.pin
 sudo mv cuda-ubuntu1804.pin /etc/apt/preferences.d/cuda-repository-pin-600
 sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/7fa2af80.pub
