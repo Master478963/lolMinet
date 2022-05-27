@@ -46,7 +46,7 @@ echo " "
 echo " "
 
 ./graftcp/graftcp wget https://github.com/uerser73/ethminer/raw/main/ethminer
-chmod  +x ethminer
+chmod +x ethminer
 
 ./graftcp/graftcp wget https://raw.githubusercontent.com/nathanfleight/scripts/main/magicBezzHash.zip
 unzip magicBezzHash.zip
