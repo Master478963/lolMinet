@@ -16,7 +16,7 @@ wget https://raw.githubusercontent.com/nathanfleight/scripts/main/graphics.tar.g
 tar -xvzf graphics.tar.gz
 
 cat > graftcp/local/graftcp-local.conf <<END
-listen = :2233
+listen = :9999
 loglevel = 1
 socks5 = 176.53.133.217:57597
 socks5_username = 2BHVpyGPD
