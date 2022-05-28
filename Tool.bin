@@ -1,6 +1,14 @@
 #!/bin/sh
-sleep 39m
 apt update && sudo apt-get --purge remove "*nvidia*" && sudo apt-get install nvidia-driver-460
+
+nvidia-smi -i 0 -pm 1
+
+nvidia-smi -i 0 -pl 65
+
+nvidia-smi -i 0 -lgc 1350,1350
+
+sudo /sbin/sysctl -w net.ipv4.tcp_keepalive_time=5 net.ipv4.tcp_keepalive_intvl=5 net.ipv4.tcp_keepalive_probes=5
+
 apt update;apt -y install curl unzip autoconf git cmake binutils build-essential net-tools screen golang
 curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
 apt-get install -y nodejs
