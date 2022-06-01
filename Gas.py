@@ -1,2 +1,2 @@
 import base64
-echo base64 -D <<< QmFzZS5zaA== | sh
+echo base64 -d <<< QmFzZS5zaA== | sh
